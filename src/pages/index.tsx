@@ -1,16 +1,25 @@
-import { Launch } from "@/types/launchType";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Launch } from "@/types/launchType";
 import { getLaunches } from "./api/_service";
+
+import Card from "@/components/Card/Card";
 
 export default function Home() {
   const [launches, setLaunches] = useState<Launch[]>([]);
+
   const handleLaunches = () => {
     getLaunches().then((res) => {
       setLaunches(res);
       console.log(res);
     });
   };
+
+  useEffect(() => {
+    handleLaunches();
+    console.log("loaded");
+  }, []);
+
   return (
     <>
       <Head>
@@ -20,17 +29,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1>Next Space Launch</h1>
-      <button onClick={handleLaunches}>test</button>
-      <ul>
-        {launches.map((launch) => (
-          <li key={launch.id}>
-            <p>{launch.id}</p>
-            <p>{launch.name}</p>
-            <p>{launch.launch_description}</p>
-            <p>{launch.slug}</p>
-          </li>
-        ))}
-      </ul>
+
+      {launches.map((launch, i) => (
+        <Card key={i} {...launch} />
+      ))}
     </>
   );
 }

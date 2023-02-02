@@ -16,3 +16,9 @@ body {
   background-color: black;
   color: white;
 }
+.model {
+  display: grid;
+  place-items: center;
+  height: 10vh;
+  cursor: grabbing;
+}

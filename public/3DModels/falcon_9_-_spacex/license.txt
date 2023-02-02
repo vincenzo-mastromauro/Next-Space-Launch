@@ -1,0 +1,11 @@
+Model Information:
+* title:	Falcon 9 - SpaceX
+* source:	https://sketchfab.com/3d-models/falcon-9-spacex-394f7cf52d124bbd9db69f24d1ff2f08
+* author:	Stanley Creative (https://sketchfab.com/Stanley_Creative)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Falcon 9 - SpaceX" (https://sketchfab.com/3d-models/falcon-9-spacex-394f7cf52d124bbd9db69f24d1ff2f08) by Stanley Creative (https://sketchfab.com/Stanley_Creative) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -11,4 +11,18 @@ export interface Launch {
   name: string;
   slug: string;
   launch_description: string;
+  provider: {
+    name: string;
+  };
+  vehicle: {
+    name: string;
+  };
+  pad: {
+    name: string;
+    location: {
+      name: string;
+      statename: string;
+    };
+  };
+  t0: string;
 }
